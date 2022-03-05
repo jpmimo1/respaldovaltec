@@ -1,0 +1,133 @@
+@import "../general/sizesSreem";
+@import "../general/margins";
+@import "../general/typography";
+@import "../general/colors";
+@import "../general/transitions";
+.banner {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 730px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    &-video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        z-index: -1;
+        transform: translate(-50%, -50%);
+    }
+    &--down-button {
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translate(-50%, 60%);
+        background-color: white;
+        width: 111px;
+        height: 91px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 3em;
+        padding-bottom: 0.7em;
+        cursor: pointer;
+        &:hover {
+            i {
+                animation: heartBeat;
+                animation-duration: 1s;
+            }
+        }
+        @include s-responsive {
+            display: none;
+        }
+    }
+    .container {
+        max-width: $l;
+        padding-left: #{$marginBasic * 3};
+        @include m-responsive {
+            padding-left: $marginBasic * 1;
+        }
+        @include s-responsive {
+            padding-left: $marginSmall;
+        }
+    }
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        color: white;
+        grid-gap: $marginBasic;
+    }
+    &__title {
+        @include h1--image;
+        color: white;
+        width: 50%;
+        @include s-responsive {
+            width: 100%;
+        }
+    }
+    &__form {
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+        @include s-responsive {
+            display: none;
+        }
+    }
+    @include s-responsive {
+        height: 350px;
+    }
+}
+
+.contact-form {
+    width: 100%;
+    max-width: 530px;
+    @include s-responsive {
+        margin: 0 auto;
+    }
+    &__field-item {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1.5em;
+        width: 100%;
+        label {
+            @include h4;
+        }
+        input {
+            @include h4--medium;
+            border-radius: 50px;
+            padding: 0.5em 1em;
+            &::placeholder {
+                color: lighten($blocking, 10%);
+            }
+            @include s-responsive {
+                background-color: lighten($blocking-two, 20%);
+            }
+        }
+    }
+    &__button {
+        display: flex;
+        justify-content: end;
+        margin-top: 3em;
+        @include s-responsive {
+            justify-content: center;
+        }
+        input {
+            border-radius: 50px;
+            padding: 0.5em 4em;
+            @include h5--strong;
+            background-color: $secondary;
+            transition: $basic-transition;
+            &:hover {
+                background-color: darken($secondary, 10%);
+            }
+            &:active {
+                background-color: darken($secondary, 15%);
+            }
+        }
+    }
+}

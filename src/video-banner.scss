@@ -1,0 +1,31 @@
+@import "general/colors";
+@import "general/buttons";
+@import "general/typography";
+
+//* ==================== banner video ======================
+.banner {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  &__video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+  }
+}
+@media screen and (max-width: 1275px) {
+  .banner {
+    &__video {
+      width: auto;
+      height: 100%;
+    }
+  }
+} ;

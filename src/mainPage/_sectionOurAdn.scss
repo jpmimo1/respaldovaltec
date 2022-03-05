@@ -1,0 +1,11 @@
+@import "../general/colors";
+@import "../general/typography";
+@import "../general/margins";
+.our-adn {
+    &__card {
+        margin-top: $marginBasic;
+    }
+    .paper-card-yellow__image {
+        background-image: url("../assets/fotos/nuestroADN.jpg");
+    }
+}

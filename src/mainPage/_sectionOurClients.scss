@@ -1,0 +1,108 @@
+@import "../general/colors";
+@import "../general/margins";
+@import "../general/sizesSreem";
+.our-clients {
+    &__carousel {
+        display: flex;
+        justify-content: space-between;
+        margin-top: $marginBasic;
+        &-item {
+            &-image {
+                height: 150px;
+                width: 180px;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+        }
+        @include s-responsive {
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+    }
+    .splide {
+        margin-top: $marginBasic;
+        &__arrows {
+            display: none;
+        }
+        &__pagination {
+            display: none;
+        }
+        &__slide {
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+
+.agp {
+    background-image: url("../assets/logoClients/agp.png");
+}
+
+.marcam {
+    background-image: url("../assets/logoClients/marcan.png");
+}
+
+.crp {
+    background-image: url("../assets/logoClients/crp.png");
+}
+
+.perufarma {
+    background-image: url("../assets/logoClients/perufarma.png");
+}
+
+.klickit {
+    background-image: url("../assets/logoClients/klickit.png");
+}
+
+.bittitan {
+    background-image: url("../assets/imagenes/bittitan.png");
+}
+
+.microsoft {
+    background-image: url("../assets/imagenes/microsoft.png");
+}
+
+.aws {
+    background-image: url("../assets/imagenes/aws.png");
+}
+
+.in {
+    background-image: url("../assets/imagenes/IN.png");
+}
+
+.sharepoint {
+    background-image: url("../assets/imagenes/sharepoint.png");
+}
+
+.powerbi {
+    background-image: url("../assets/imagenes/powerbi.png");
+}
+
+.vscode {
+    background-image: url("../assets/imagenes/vscode.png");
+}
+
+.mic {
+    background-image: url("../assets/imagenes/mic.png");
+}
+
+.universidad-continental {
+    background-image: url("../assets/logoClients/universidadContinental.png");
+}
+
+.osinergmin {
+    background-image: url("../assets/logoClients/osinergmin.png");
+}
+
+.unsa {
+    background-image: url("../assets/logoClients/unsa.png");
+}
+
+.adecco {
+    background-image: url("../assets/logoClients/adecco.png");
+}
+
+.marcan {
+    background-image: url("../assets/logoClients/marcan.png");
+}

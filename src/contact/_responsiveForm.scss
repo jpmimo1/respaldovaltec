@@ -1,0 +1,6 @@
+.reponsive-contact-form {
+    display: none;
+    @include s-responsive {
+        display: block;
+    }
+}

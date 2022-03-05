@@ -1,0 +1,11 @@
+@import "general/sizesSreem";
+@import "general/margins";
+.container {
+    width: 100%;
+    max-width: $m;
+    padding: 0 $marginBasic;
+    margin: 0 auto;
+    @include s-responsive {
+        padding: 0 $marginSmall;
+    }
+}

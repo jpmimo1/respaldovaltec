@@ -1,0 +1,83 @@
+@import "general/colors";
+@import "general/typography";
+.footer {
+  background-color: $text;
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  @media screen and (max-width: 760px) {
+    height: 492px;
+  }
+  &__container {
+    padding: 40px 0 40px 0;
+    width: 950px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    @media screen and (max-width: 760px) {
+      gap: 30px;
+    }
+    &__logo {
+      width: 345px;
+      align-self: center;
+      @media screen and (max-width: 760px) {
+        width: 250px;
+      }
+    }
+    &__title {
+      @include h2;
+      color: white;
+      align-self: center;
+    }
+    &__listLinks {
+      font-size: 40px;
+      color: white;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      &--link {
+        color: #ffffff;
+        &:active {
+          color: #fff;
+        }
+      }
+    }
+    &__text {
+      @include h5;
+      color: white;
+      @media screen and (max-width: 760px) {
+        display: none;
+      }
+    }
+    &__containerButton {
+      display: flex;
+      justify-content: center;
+      &__button {
+        padding: 15px;
+        border-radius: 20px;
+        @include p($text);
+        background-color: $secondary;
+        font-weight: bold;
+      }
+    }
+    &__linksContainer {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      &__privacyLink {
+        @include p(#fff);
+        text-decoration: underline;
+        &:visited {
+          color: #fff;
+        }
+      }
+      &__rightsLink {
+        @include p(#fff);
+        text-decoration: underline;
+        &:visited {
+          color: #fff;
+        }
+      }
+    }
+  }
+}

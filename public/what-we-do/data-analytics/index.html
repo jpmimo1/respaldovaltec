@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Análisis de datos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="/css/custom.css" />
+    <link rel="stylesheet" href="/css/nav.css" />
+    <link rel="stylesheet" href="/css/cloud.css" />
+    <link rel="stylesheet" href="/css/mainPage.css" />
+    <link rel="stylesheet" href="/css/software-development.css" />
+    <link rel="stylesheet" href="/assets/valtec-icons/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+    <script src="https://unpkg.com/boxicons@2.1.1/dist/boxicons.js"></script>
+    <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="icon" type="image/x-icon" href="/assets/favicon/favicon.png">
+</head>
+
+<body>
+    <a class="button__floating--whatsapp" target="_blank" href="https://wa.link/valtecconsultoresweb">
+        <img src="/assets/floating/whatsapp.svg" alt="whatsapp">
+      </a>
+      <a class="button__floating--callme" href="/contact">
+        <img src="/assets/floating/assistant.svg" alt="asistente">
+      </a>
+      <a class="button__floating--back-start" href="#banner">
+        <i class='bx bxs-chevron-up'></i>
+      </a>
+    <nav class="nav">
+        <a href="/"><img src="/assets/logos/logo-valtec.svg" alt="logo" class="nav__logo"></a>
+        
+        <li class="nav__container--items">
+        <li class="nav__item  nav__item--success-stories">
+            <a class="nav__item" href="/success-stories">
+                Casos de éxito
+            </a>
+            <ul class="nav__submenu nav__submenu--success-stories">
+                <a href="/success-stories/web-agp">
+                    <li class="nav__submenu--item">
+                        <img src="/assets/icons-of-projects/compuAGP.png">
+                        Desarrollo web: AGP
+                    </li>
+                </a>
+                <a href="/success-stories/mobile-sr">
+                    <li class="nav__submenu--item">
+                        <img src="/assets/icons-of-projects/MovilSR.png">
+                        App Movíl: S&R
+                    </li>
+                </a>
+                <a href="/success-stories/cloud-perufarma">
+                    <li class="nav__submenu--item">
+                        <img src="/assets/icons-of-projects/perufarma.png">
+                        Cloud: PeruFarma
+                    </li>
+                </a>
+                <a href="/success-stories/cloud-crp">
+                    <li class="nav__submenu--item">
+                        <img src="/assets/icons-of-projects/crpRadios.png">
+                        Cloud: CRP Radios
+                    </li>
+                </a>
+            </ul>
+        </li>
+        <li class="nav__item nav__item--solutions">
+            <a href="/solutions" class="nav__item">
+                Soluciones
+            </a>
+            
+        </li>
+        <li class="nav__item nav__item--what-we-do">
+            <a class="nav__item" href="/what-we-do">
+              Qué hacemos
+            </a>
+            <ul class="nav__submenu nav__submenu--what-we-do">
+                <a href="/what-we-do/software-development">
+                  <li class="nav__submenu--item">
+                    <img class="nav__submenu--item-icon" src="/assets/icons/1326-command-window-line.svg">
+                    Desarrollo de software
+                  </li>
+                </a>
+                <a href="/what-we-do/cloud">
+                  <li class="nav__submenu--item">
+                    <img class="nav__submenu--item-icon" src="/assets/icons/57-server.svg">
+                    Computación en nube
+                  </li>
+                </a>
+                <a herf="/what-we-do/software-as-a-service">
+                  <li class="nav__submenu--item">
+                    <img class="nav__submenu--item-icon" src="/assets/icons/1309-load-balancer.svg">
+                    Software as a service
+                  </li>
+                </a>
+                <a href="/what-we-do/automation">
+                  <li class="nav__submenu--item">
+                    <img class="nav__submenu--item-icon" src="/assets/icons/742-multimedia-code.svg">
+                    Automatización
+                  </li>
+                </a>
+                <a href="/what-we-do/data-analytics">
+                  <li class="nav__submenu--item">
+                    <img class="nav__submenu--item-icon" src="/assets/icons/153-bar-chart-growth.svg">
+                    Análisis de datos
+                  </li>
+                </a>
+                <a href="/what-we-do/cibersecurity">
+                  <li class="nav__submenu--item">
+                    <img class="nav__submenu--item-icon" src="/assets/icons/500-fingerprint-security.svg">
+                   Ciberseguridad
+                  </li>
+                </a>
+                <a href="/what-we-do/training">
+                  <li class="nav__submenu--item">
+                    <img class="nav__submenu--item-icon" src="/assets/icons/970-video-conference.svg">
+                   Capacitaciones
+                  </li>
+                </a>
+                <a href="/what-we-do/licenses">
+                  <li class="nav__submenu--item">
+                    <img class="nav__submenu--item-icon" src="/assets/icons/478-computer-display.svg">
+                    Licenciamiento
+                  </li>
+                </a>
+            </ul>
+        </li>
+        <a href="/about">
+            <li class="nav__item">Quiénes somos</li>
+        </a>
+        </li>
+        <button class="nav__button--search" id="button-search">
+            <i class='bx bx-search'></i>
+        </button>
+        <a href="/contact">
+            <button class="nav__button">
+                Contáctanos
+            </button>
+        </a>
+        <button class="nav__button--language">
+            <img src="/assets/logos/flag-peru.svg" alt="bandera peruana">
+            <i class='bx bx-chevron-down'></i>
+            <div class="dropdown--language">
+                <a href="/en/what-we-do/data-analytics">
+                    <li class="dropdown__item">
+                        <img src="/assets/logos/flag-for-united-states.svg" alt="bandera de estados unidos"> EN
+                    </li>
+                </a>
+            </div>
+        </button>
+    </nav>
+    <div class="collapse nav__content--responsive" id="navbarToggleExternalContent">
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        <a href="/success-stories">
+                            CASOS DE ÉXITO
+                        </a>
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <ul class="nav__submenu--responsive">
+                            <a href="/success-stories/web-agp">
+                                <li class="nav__submenu--item nav__submenu-success-stories--item">
+                                    <img src="/assets/icons-of-projects/compuAGP.png">
+                                    Desarrollo web: AGP
+                                </li>
+                            </a>
+                            <a href="/success-stories/mobile-sr">
+                                <li class="nav__submenu--item nav__submenu-success-stories--item">
+                                    <img src="/assets/icons-of-projects/MovilSR.png">
+                                    App Movíl: S&R
+                                </li>
+                            </a>
+                            <a href="/success-stories/cloud-perufarma">
+                                <li class="nav__submenu--item nav__submenu-success-stories--item">
+                                    <img src="/assets/icons-of-projects/perufarma.png">
+                                    Cloud: PeruFarma
+                                </li>
+                            </a>
+                            <a href="/success-stories/cloud-crp">
+                                <li class="nav__submenu--item nav__submenu-success-stories--item">
+                                    <img src="/assets/icons-of-projects/crpRadios.png">
+                                    Cloud: CRP Radios
+                                </li>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        <a href="/solutions">
+                            SOLUCIONES
+                        </a>
+                    </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <ul class="nav__submenu--responsive">
+                            <a href="/solutions/web">
+                                <li class="nav__submenu--item">
+                                    <img class="nav__submenu--item-icon"
+                                        src="/assets/icons/478-computer-display.svg">
+                                    Web
+                                </li>
+                            </a>
+                            <a href="/solutions/mobile">
+                                <li class="nav__submenu--item">
+                                    <img class="nav__submenu--item-icon"
+                                        src="/assets/icons/721-hand-with-phone.svg">
+                                    Móvil
+                                </li>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        <a href="/what-we-do">
+                            QUÉ HACEMOS
+                        </a>
+                    </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <ul class="nav__submenu--responsive">
+                            <a href="/what-we-do/software-development">
+                                <li class="nav__submenu--item">
+                                    <img class="nav__submenu--item-icon"
+                                        src="/assets/icons/1326-command-window-line.svg">
+                                    Desarrollo de software
+                                </li>
+                            </a>
+                            <a href="/what-we-do/cloud">
+                                <li class="nav__submenu--item">
+                                    <img class="nav__submenu--item-icon" src="/assets/icons/57-server.svg">
+                                    Cloud Computing
+                                </li>
+                            </a>
+                            <a href="/what-we-do/software-as-a-service">
+                                <li class="nav__submenu--item">
+                                    <img class="nav__submenu--item-icon"
+                                        src="/assets/icons/1309-load-balancer.svg">
+                                    Software as a service
+                                </li>
+                            </a>
+                            <a href="/what-we-do/cibersecurity">
+                                <li class="nav__submenu--item">
+                                    <img class="nav__submenu--item-icon"
+                                        src="/assets/icons/500-fingerprint-security.svg">
+                                    Ciberseguridad
+                                </li>
+                            </a>
+                            <a>
+                                <li class="nav__submenu--item">
+                                    <img class="nav__submenu--item-icon"
+                                        src="/assets/icons/153-bar-chart-growth.svg">
+                                    Data Analytics
+                                </li>
+                            </a href="/what-we-do/data-analytics">
+                            <a href="/what-we-do/training">
+                                <li class="nav__submenu--item">
+                                    <img class="nav__submenu--item-icon"
+                                        src="/assets/icons/970-video-conference.svg">
+                                    Capacitaciones
+                                </li>
+                            </a>
+                            <a href="/what-we-do/automation">
+                                <li class="nav__submenu--item">
+                                    <img class="nav__submenu--item-icon"
+                                        src="/assets/icons/742-multimedia-code.svg">
+                                    Automatización
+                                </li>
+                            </a>
+                            <a href="/what-we-do/licenses">
+                                <li class="nav__submenu--item">
+                                    <img class="nav__submenu--item-icon"
+                                        src="/assets/icons/478-computer-display.svg">
+                                    Venta de Licencias
+                                </li>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFour">
+                    <a href="/about">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseFour" aria-expanded="false"
+                            aria-controls="flush-collapseFour">
+                            QUIENES SOMOS
+                        </button>
+                    </a>
+                </h2>
+            </div>
+        </div>
+        <!--* campo de búsqueda -->
+        <div class="nav__menu-rest--responsive p-4">
+            <div class="nav__textfield-container--responsive">
+                <i class='bx bx-search'></i>
+                <input type="text" class="nav__textfield--responsive" placeholder="Ingresar el texto a buscar">
+            </div>
+            <div class="nav__language--responsive">
+                <img src="/assets/logos/flag-peru.svg" alt="bandera peruana">
+                <a href="/en">
+                    <img src="/assets/logos/flag-for-united-states.svg" alt="bandera de estados unidos">
+                </a>
+            </div>
+            <div class="nav__social-media--responsive">
+                <a href="https://www.linkedin.com/company/valtec-consultores-proveedor-soluciones-de-nube/"
+                    target="_blank">
+                    <i class='bx bxl-linkedin-square'></i>
+                </a>
+                <a href="https://www.instagram.com/valtec_consultores/" target="_blank">
+                    <i class='bx bxl-instagram-alt'></i>
+                </a>
+                <a href="https://api.whatsapp.com/send?phone=51943527458" target="_blank">
+                    <i class='bx bxl-whatsapp-square'></i>
+                </a>
+                <a href="https://www.facebook.com/ValtecConsultores" target="_blank">
+                    <i class='bx bxl-facebook-square'></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar nav--responsive">
+        <div class="container-fluid">
+            <img src="/assets/logos/logo-valtec.svg" alt="logo" class="nav__logo">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <i class='bx bx-menu'></i>
+            </button>
+        </div>
+    </nav>
+    <header id="banner" class="banner">
+        <!--* search-bar -->
+        <video id="banner-video" class="banner-video" autoplay muted loop>
+            <source src="/assets/videos/data.mp4" type="video/mp4" />
+        </video>
+        <div class="nav__search-bar" id="search-bar">
+            <div class="nav__textfield">
+                <i class='bx bx-search'></i>
+                <input type="text">
+            </div>
+            <span>
+                Buscar
+            </span>
+        </div>
+        <div class="container-sm banner__container">
+            <h2 class="banner__title">SOMOS TU MEJOR ALIADO EN TECNOLOGÍA DIGITAL</h2>
+            <a class="banner__link" href="/contact"><i class='bx bx-right-arrow-alt'></i>CONTÁCTANOS</a>
+        </div>
+    </header>
+    <main class="container-xxl main">
+        <div class="row main__card">
+            <div class="col-sm-12 col-md-6 d-flex">
+                <img src="/assets/imagenes/undraw_financial_data_es63 1.png" width="100%">
+            </div>
+            <div class="col-sm-12 col-md-6">
+                <h3 class="main__card-title mb-5">DATA ANALYTICS</h3>
+                <p class="main__card-description">En estos tiempos, las decisiones se deben tomar en base a data. Nuestras plaraformas de análisis de datos, te permitirán tener un panorama completo de las necesidades y oportunidades que podrán ayudar a tu organización a crecer. </p>
+            </div>
+        </div>
+        <div class="header__section">
+            <h2>NUESTRAS SOLUCIONES</h2>
+            <p>Toma decisiones respaldadas</p>
+        </div>
+    </main>
+        <div class="solution-section">
+            <div class="container">
+                <div class="row justify-content-around">
+                    <div class="col-lg-5 solution-card">
+                        <div class="solution-card__content">
+                            <h3 class="solution-card__content--title">Arquitectura de datos en la plataformas de datos en la nube</h3>
+                            <h4 class="solution-card__content--description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, magnam consequatur molestiae harum explicabo temporibus repellat veritatis omnis et fugiat dignissimos perspiciatis nam vero pariatur beatae ea tempore amet! Ab.</h4>
+                        </div>
+                    </div>
+                    <div class=" col-lg-5 solution-card">
+                        <div class="solution-card__content">
+                            <h3 class="solution-card__content--title">Administración de Base de Datos en entorno cloud</h3>
+                            <h4 class="solution-card__content--description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo maiores voluptate neque optio eaque temporibus eius laudantium hic et ea eveniet quaerat commodi quisquam facere corporis, porro eos autem accusantium?</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-around mt-5" >
+                    <div class="col-lg-5 solution-card">
+                        <div class="solution-card__content">
+                            <h3 class="solution-card__content--title">Analítica Avanzada Migraciones</h3>
+                            <h4 class="solution-card__content--description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum minus nulla, quaerat doloremque aliquam ut ratione rem? Est officiis quidem, hic, tenetur unde aliquid ea rerum dolore totam, voluptatibus dolorum?</h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 solution-card">
+                        <div class="solution-card__content">
+                            <h3 class="solution-card__content--title">Inteligencia Artificial y Machine Learning</h3>
+                            <h4 class="solution-card__content--description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum sapiente a praesentium, architecto beatae ratione facere repudiandae iure recusandae, debitis minima consequatur expedita qui delectus amet, quae dolorem natus. Beatae?</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="our-adn section">
+            <div class="container">
+                <div class="header-section">
+                    <div class="header-section__title">¿POR QUÉ CONTRATAR UN SERVICIO DE DATA ANALYTICS?</div>
+                    <div class="header-section__subtitle">
+                        Nos da grandes beneficios
+                    </div>
+                </div>
+                <div class="our-adn__card">
+                    <div class="paper-card-yellow">
+                        <div class="paper-card-yellow__content">
+                            <div class="paper-card-yellow__text">
+                                En el mundo competitivo de hoy, todas las empresas deben conocer y utilizar el análisis de data, puesto que la gran cantidad de datos que generan, contiene información valiosa que hay que recopilar, visualizar, organizar y evaluar.  Un análisis de data eficiente, mejora la eficiencia, minimiza los costos y promueve una toma de decisiones acertada.
+                            </div>
+                            
+                        </div>
+                        <div class="paper-card-yellow__image"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="our-clients section">
+            <div class="container">
+                <div class="header-section">
+                    <div class="header-section__title">NUESTROS PARTNERS</div>
+
+                </div>
+                <div class="our-clients__carousel">
+                    <div class="our-clients__carousel-item">
+                        <div class="our-clients__carousel-item-image sharepoint"></div>
+                    </div>
+                    <div class="our-clients__carousel-item">
+                        <div class="our-clients__carousel-item-image powerbi"></div>
+                    </div>
+                    <div class="our-clients__carousel-item">
+                        <div class="our-clients__carousel-item-image vscode"></div>
+                    </div>
+                    <div class="our-clients__carousel-item">
+                        <div class="our-clients__carousel-item-image mic"></div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+        <!--* ========== contact =========== -->
+        <div class="contact">
+            <div class="contact__container">
+                <h3 class="contact__title">¿Tienes dudas? Te llamanos ahora</h3>
+                <div class="contact__inputs">
+                    <div class="contact__text-field">
+                        <h4>Número de celular</h4>
+                        <input type="text" placeholder="999-999-999">
+                    </div>
+                    <button class="contact__button">
+                        Llámame ahora
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="container" style="margin-bottom: 150px">
+            <div class="header__section">
+                <h2>CIFRAS ACTUALES</h2>
+                <p>lorem ipsum</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 container-circles">
+                    <div class="col-lg-4 circle">
+                        <div class="circle-in"> <h3 class="circle-in__title"> +7 </h3>
+                            <h4 class="circle-in__description">lorem ipsum</h4></div>
+                       
+                    </div>
+                    <div class="col-lg-4 circle">
+                        <div class="circle-in"> <h3 class="circle-in__title"></h3>
+                        <h3 class="circle-in__title"> 100% </h3>
+                        <h4 class="circle-in__description" >lorem ipsum</h4>
+                    </div>
+                    </div>
+                    <div class="col-lg-4 circle">
+                        <div class="circle-in"> <h3 class="circle-in__title"></h3>
+                        <h3 class="circle-in__title"> +7 </h3>
+                        <h4 class="circle-in__description">lorem ipsum</h4>
+                   </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+   
+    <div class="offertSection__container" style="margin: 150px 0">
+        <h2 class="offertSection__container--title">¿QUÉ OFRECEMOS?</h2>
+        <div class="offertSection__container__wrapperServices">
+          <div class="containerServices">
+            <img
+              class="containerServices--img"
+              src="/assets/imagenes/1326-command-window-line-outline 3.svg"
+              alt=""
+            />Desarrollo de Software
+            <p class="containerServices--description"></p>
+          </div>
+          <div class="containerServices">
+            <img
+              class="containerServices--img"
+              src="/assets/icons/57-server.svg"
+              alt=""
+            />Computación en la nube
+            <p class="containerServices--description"></p>
+          </div>
+          <div class="containerServices">
+            <img
+              class="containerServices--img"
+              src="/assets/icons/1309-load-balancer.svg"
+              alt=""
+            />Software como servicio
+            <p class="containerServices--description"></p>
+          </div>
+          <div class="containerServices">
+            <img
+              class="containerServices--img"
+              src="/assets/icons/742-multimedia-code.svg"
+              alt=""
+            />Automatización
+            <p class="containerServices--description"></p>
+          </div>
+          
+          <div class="containerServices">
+            <img
+              class="containerServices--img"
+              src="/assets/icons/153-bar-chart-growth.svg"
+              alt=""
+            />Análisis de datos
+            <p class="containerServices--description"></p>
+          </div>
+          <div class="containerServices">
+            <img
+              class="containerServices--img"
+              src="/assets/icons/500-fingerprint-security.svg"
+              alt=""
+            />Ciberseguridad
+            <p class="containerServices--description"></p>
+          </div>
+          <div class="containerServices">
+            <img
+              class="containerServices--img"
+              src="/assets/icons/970-video-conference.svg"
+              alt=""
+            />Capacitaciones
+            <p class="containerServices--description"></p>
+          </div>
+          <div class="containerServices">
+            <img
+              class="containerServices--img"
+              src="/assets/icons/478-computer-display.svg"
+              alt=""
+            />Licenciamiento
+            <p class="containerServices--description"></p>
+          </div>
+        </div>
+      </div>
+    <div class="footer">
+        <div class="footer__container">
+            <img class="footer__container__logo" src="/assets/imagenes/valteclogo.png" />
+            <h2 class="footer__container__title">TRABAJEMOS JUNTOS</h2>
+            <div class="footer__container__listLinks">
+                <a href="https://www.linkedin.com/company/valtec-consultores-proveedor-soluciones-de-nube/"
+                    target="_blank" class="footer__container__listLinks--link"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/valtec_consultores/" target="_blank"
+                    class="footer__container__listLinks--link"><i class="fa-brands fa-instagram-square"></i></a><a
+                    href="https://wa.link/valtecconsultoresweb" target="_blank"
+                    class="footer__container__listLinks--link"><i class="fa-brands fa-whatsapp-square"></i></a><a
+                    href="https://www.facebook.com/ValtecConsultores" target="_blank"
+                    class="footer__container__listLinks--link"><i class="fa-brands fa-facebook-square"></i></a>
+            </div>
+            <p class="footer__container__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor tempor incididunt ut
+                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                ut aliquip ex ea commodo consequat.
+            </p>
+            <div class="footer__container__containerButton">
+                <button class="footer__container__containerButton__button">
+                    CONTÁCTANOS
+                </button>
+            </div>
+
+            <div class="footer__container__linksContainer">
+                <a class="footer__container__linksContainer__privacyLink" href="">Politicas de Privacidad</a>
+                <a class="footer__container__linksContainer__rightsLink" href="">Derechos Reservados</a>
+            </div>
+        </div>
+    </div>
+    <script src="/scripts/nav.js"></script>
+</body>
+
+</html>

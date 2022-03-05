@@ -1,0 +1,63 @@
+$ms: "modal-success";
+##{$ms} {
+    .container {
+        height: 100%;
+    }
+    .#{$ms}__content {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    .#{$ms}__close-button {
+        position: absolute;
+        top: 1em;
+        right: 2.5em;
+        font-size: 3.5em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include m-responsive {
+            top: 0.5em;
+            right: 1em;
+            font-size: 3em;
+        }
+        @include s-responsive {
+            top: 0.5em;
+            right: 0.5em;
+            font-size: 2.5em;
+        }
+        &:hover {
+            i {
+                color: $text;
+            }
+        }
+        i {
+            transition: $basic-transition;
+            color: lighten($text, 30%);
+            font-size: 1em;
+        }
+    }
+    .#{$ms}__body {
+        text-align: center;
+        padding: 0 $marginBasic;
+        @include s-responsive {
+            padding: 0 $marginSmall;
+        }
+    }
+    .#{$ms}__title {
+        @include h1--image;
+        color: $primary-two;
+        margin-bottom: 1.5em;
+    }
+    .#{$ms}__text {
+        @include h3;
+        margin-bottom: 2em;
+    }
+    .#{$ms}__continue-button {
+        a {
+            @include button-line;
+        }
+    }
+}

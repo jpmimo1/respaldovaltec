@@ -1,0 +1,71 @@
+@import "colors";
+@import "typography";
+@import "transitions";
+@mixin button-arrow( $size: normal, $color: $primary, $hover-color: darken($primary, 10%), $active-color: darken($primary, 15%)) {
+    user-select: none;
+    display: flex;
+    align-items: center;
+    color: $color;
+    transition: $basic-transition;
+    cursor: pointer;
+    @if $size==normal {
+        @include h4--button;
+    }
+    @else if $size==small {
+        @include h5--button;
+    }
+    $select: #{&};
+    &:hover {
+        color: $hover-color;
+        .button-arrow__icon {
+            color: $hover-color;
+        }
+    }
+    &:active {
+        color: $active-color;
+        .button-arrow__icon {
+            color: $active-color;
+        }
+    }
+    .button-arrow__icon {
+        color: $color;
+        font-size: 2em;
+        transform: rotate(180deg);
+        margin-right: 0.7em;
+        transition: $basic-transition;
+    }
+}
+
+@mixin button-line($color: $primary-two, $color-font: $text, $color-font-hover: $white) {
+    text-align: center;
+    @include h5--strong;
+    border: solid 3px $color;
+    width: 100%;
+    padding: 0.4em 4em;
+    border-radius: 40px;
+    transition: $basic-transition;
+    color: $color-font;
+    cursor: pointer;
+    &:hover {
+        background: $color;
+        color: $color-font-hover !important;
+    }
+}
+
+.button-arrow--small {
+    @include button-arrow(small);
+}
+
+.button-see-more {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__text {
+        @include h5--strong;
+    }
+    &__icon {
+        font-size: 3em;
+        display: flex;
+        align-items: start;
+    }
+}

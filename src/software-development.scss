@@ -1,0 +1,373 @@
+@import "general/colors";
+@import "general/buttons";
+@import "general/typography";
+
+//* --------------banner-----------------
+
+a {
+  color: $text;
+  &:hover {
+    color: $white;
+  }
+}
+
+.nav__search-bar {
+  position: static;
+}
+
+.banner {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+}
+
+.banner__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+}
+
+.banner__title {
+  @include h1--image;
+  color: $white;
+}
+
+.banner__link {
+  color: $white;
+  font-weight: 900;
+  font-size: 24px;
+  letter-spacing: 0.2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  & > .bx {
+    color: $white;
+  }
+}
+
+.banner__link:hover {
+  color: $secondary;
+  & > .bx {
+    color: $secondary;
+  }
+}
+
+.nav__search-bar {
+  align-self: flex-start;
+}
+
+@media screen and (max-width: 574px) {
+  .banner {
+    height: 327px;
+  }
+  .banner__title {
+    display: none;
+  }
+  .banner__link {
+    display: none;
+  }
+}
+
+//* ========== header__section ===============
+
+.header__section {
+  padding: 110px 0;
+  & > h2 {
+    @include h2;
+    text-align: center;
+  }
+
+  & > p {
+    @include h4--medium;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header__section {
+    padding: 50px 0;
+  }
+}
+//* ================= main ===================
+.main {
+  padding: 200px 20px 0 20px;
+}
+
+.main__card-title {
+  @include h2;
+}
+
+.main__card-description {
+  @include h4--medium;
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    padding: 40px 20px;
+  }
+  .main__card {
+    flex-direction: column-reverse;
+  }
+  .main__card-title {
+    @include h4;
+    text-align: center;
+  }
+}
+
+//* ============ tabs ==================
+.tabs__items {
+  height: auto;
+}
+
+.tabs__button {
+  @include h3;
+  white-space: nowrap;
+  color: black !important;
+  &.active[id^="pills-"] {
+    border-radius: 40px;
+    background-color: $primary-two;
+    color: white !important;
+  }
+}
+
+.tabs__card {
+  background: rgba(196, 196, 196, 0.15);
+  border-radius: 40px;
+  padding: 40px;
+  margin: 10px;
+}
+
+.tabs__card-description {
+  @include h4--medium;
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .tabs__button {
+    @include h5;
+  }
+
+  .tabs__card {
+    padding: 26px;
+  }
+}
+
+//* ============== workflow ===============
+
+.workflow {
+  width: 100%;
+  min-height: 1500px;
+  background-image: url("../assets/imagenes/line-time.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  margin-bottom: 120px;
+  position: relative;
+}
+
+.workflow::before {
+  content: "";
+  width: 41px;
+  height: 41px;
+  background-color: $primary-two;
+  position: absolute;
+  border-radius: 50%;
+  top: -40px;
+  left: -15px;
+}
+
+.workflow::after {
+  content: "";
+  width: 41px;
+  height: 41px;
+  background-color: $primary-two;
+  position: absolute;
+  border-radius: 50%;
+  bottom: -40px;
+  right: -20px;
+}
+
+.workflow__number {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  & > h3 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 144px;
+    line-height: 176px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.2em;
+    -webkit-text-stroke: 2px $extra;
+    color: transparent;
+  }
+
+  & > h4 {
+    @include h3;
+  }
+}
+
+.workflow__description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include h4--medium;
+}
+
+@media screen and (max-width: 768px) {
+  .workflow__number {
+    align-items: flex-start;
+  }
+
+  .workflow__ghost-card {
+    &:nth-child(2) {
+      flex-direction: column-reverse;
+    }
+
+    &:nth-child(4) {
+      flex-direction: column-reverse;
+    }
+  }
+  .workflow {
+    &::after {
+      display: none;
+    }
+    &::before {
+      display: none;
+    }
+    background-image: none;
+  }
+}
+
+//* ========== contact ===========
+
+.contact {
+  display: flex;
+  justify-content: center;
+}
+
+.contact__container {
+  height: 224px;
+  width: 730px;
+  border-radius: 40px;
+  border: 4px solid $secondary;
+  box-sizing: border-box;
+  border-radius: 40px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.contact__inputs {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 20px;
+}
+
+.contact__title {
+  @include h4;
+}
+
+.contact__text-field {
+  width: 360px;
+  & > h4 {
+    @include h5;
+    font-weight: bold;
+  }
+
+  & > input {
+    @include h4--medium;
+    background: rgba(196, 196, 196, 0.15);
+    border-radius: 40px;
+    width: 100%;
+    height: 62px;
+    padding: 20px 40px;
+  }
+}
+
+.contact__button {
+  background: $secondary;
+  border-radius: 40px;
+  width: 230px;
+  height: 56px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 768px) {
+  .contact__container {
+    width: 100%;
+    height: 338px;
+    padding: 10px;
+  }
+
+  .contact__inputs {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact__text-field {
+    width: 100%;
+  }
+
+  .contact__button {
+    width: 100%;
+  }
+}
+
+//* =========== services ============
+
+.services {
+  max-width: 1575px;
+  min-height: 249px;
+  background-color: $primary-blur;
+  border-radius: 40px;
+  display: flex;
+  margin: auto;
+  margin-bottom: 170px;
+  justify-content: center;
+  align-content: center;
+  padding: 50px;
+  gap: 50px;
+  flex-wrap: wrap;
+  &__item {
+    flex-basis: 300px;
+    @include h5;
+    &-icon {
+      width: 54px;
+    }
+  }
+}
+
+@media screen and (max-width: 1626px) {
+  .services {
+    margin: 0 12px;
+    margin-bottom: 170px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .services {
+    padding: 40px 20px;
+  }
+}

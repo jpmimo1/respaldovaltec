@@ -1,0 +1,85 @@
+@import "../general/colors";
+@import "../general/typography";
+.our-providers {
+    &__cards {
+        display: flex;
+        justify-content: center;
+        grid-gap: 1.5em;
+        flex-wrap: wrap;
+        margin-top: 6em;
+        @include s-responsive {
+            text-align: center;
+            margin-top: 3em;
+        }
+    }
+    &__card {
+        background: rgba(196, 196, 196, 0.15);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 40px;
+        padding: 2.5em 1.2em;
+        padding-bottom: 3em;
+        width: calc((100% - 3em) / 3);
+        @include m-responsive {
+            width: calc((100% - 1.5em) / 2);
+        }
+        @include xs-responsive {
+            width: 100%;
+        }
+    }
+    &__icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2em;
+        .icon {
+            width: 100px;
+            height: 75px;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .icon-365 {
+            background-image: url("/assets/partners/365.png");
+        }
+        .icon-azure {
+            background-image: url("/assets/partners/azure.png");
+        }
+        .icon-awsm {
+            background-image: url("/assets/partners/awsm.png");
+        }
+    }
+    &__title {
+        @include h3;
+        text-align: center;
+    }
+    &__subtitle {
+        margin: 2em 0;
+        @include h4--medium;
+        text-align: center;
+    }
+    &__items {
+        @include h5;
+        ul {
+            li {
+                list-style: outside;
+                margin-bottom: 1em;
+            }
+        }
+    }
+    &__contact-button {
+        margin: 1.5em 0;
+        a {
+            @include button-line($secondary,
+            $text,
+            $white);
+            display: block;
+            padding: 0.8em;
+        }
+    }
+    &__footer {
+        flex-grow: 1;
+        display: flex;
+        align-items: flex-end;
+        @include h5;
+    }
+}

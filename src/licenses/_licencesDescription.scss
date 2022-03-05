@@ -1,0 +1,6 @@
+@import "../cards";
+.licenses-description {
+    .main-card {
+        @include main-card;
+    }
+}

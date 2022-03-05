@@ -1,0 +1,6 @@
+@import "../cards";
+.saas-description {
+    .main-card {
+        @include main-card("/assets/imagenes/saas.png");
+    }
+}

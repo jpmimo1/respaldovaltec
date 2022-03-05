@@ -1,0 +1,111 @@
+@import "../general/margins";
+@import "../iconsValtec";
+@import "../general/transitions";
+@import "../general/buttons";
+$icons-valtec: "globe",
+"consultation",
+"envelope-mail-send";
+.other-ways-contact {
+    .container {
+        max-width: calc(#{$m} - #{$marginBasic * 2});
+    }
+    &__cards {
+        display: flex;
+        justify-content: center;
+        grid-gap: $marginBasic;
+        flex-wrap: wrap;
+        margin-top: calc(#{$marginBasic} + 1em);
+        margin-bottom: 2em;
+        @include s-responsive {
+            grid-gap: $marginSmall;
+        }
+    }
+    &__card {
+        width: calc((100% - #{$marginBasic * 2}) / 3);
+        position: relative;
+        margin-top: calc(124px / 2);
+        @include s-responsive {
+            width: calc((100% - #{$marginSmall}) / 2);
+        }
+        @include xs-responsive {
+            width: 100%;
+        }
+    }
+    &__icon {
+        background-color: $white;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        height: 124px;
+        width: 124px;
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        @each $icon in $icons-valtec {
+            .icons-valtec--#{$icon} {
+                height: 100%;
+                width: 100%;
+                background-position: center;
+                background-size: 65%;
+                background-repeat: no-repeat;
+                background-image: url(map-get($valtec-icons-urls, "#{$icon}-svg"));
+            }
+        }
+    }
+    &__body {
+        background-color: $primary-blur;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 41.3611px;
+        padding: 2.5em 2em;
+        padding-top: calc(124px / 2 + 1em);
+        height: 100%;
+    }
+    &__title {
+        @include h4--medium;
+    }
+    &__content {
+        margin-top: 2em;
+    }
+    &__phone-number {
+        margin-top: $marginBasic;
+        @include h5--strong;
+        a {
+            color: $primary-two;
+            transition: $basic-transition;
+            &:hover {
+                color: darken($primary-two, 5%);
+            }
+        }
+    }
+    &__send-mail-button {
+        margin-top: $marginBasic;
+        display: flex;
+        justify-content: center;
+        a {
+            @include button-line;
+            width: 100%;
+            padding-right: 0;
+            padding-left: 0;
+        }
+    }
+    &__social-network {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @include h5;
+        a {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5em;
+            i {
+                font-size: 2em;
+                margin-right: 0.5em;
+            }
+            transition: $basic-transition;
+            cursor: pointer;
+            &:hover {
+                color: $primary-two;
+            }
+        }
+    }
+}

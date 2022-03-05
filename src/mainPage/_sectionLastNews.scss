@@ -1,0 +1,32 @@
+@import "../general/colors";
+@import "../general/margins";
+@import "../general/sizesSreem";
+.last-news {
+    background-color: $primary-blur;
+    &__cards {
+        margin-top: $marginBasic;
+        display: grid;
+        grid-gap: $marginBasic;
+        grid-template-columns: repeat(3, 1fr);
+        @include s-responsive {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: $marginSmall;
+        }
+        @include xs-responsive {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+    &__card {
+        &-image--1 {
+            background-image: url("../assets/fotosNews/new1.png");
+        }
+        &-image--2 {
+            background-image: url("../assets/fotosNews/new2.png");
+        }
+        &-image--3 {
+            background-image: url("../assets/fotosNews/new3.png");
+        }
+    }
+}

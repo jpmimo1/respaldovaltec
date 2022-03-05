@@ -1,0 +1,1076 @@
+@font-face {
+    font-family: 'valtec-icons';
+    src: url('fonts/valtec-icons.eot?leplny');
+    src: url('fonts/valtec-icons.eot?leplny#iefix') format('embedded-opentype'), url('fonts/valtec-icons.ttf?leplny') format('truetype'), url('fonts/valtec-icons.woff?leplny') format('woff'), url('fonts/valtec-icons.svg?leplny#valtec-icons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="valtec-"],
+[class*=" valtec-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'valtec-icons' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.valtec-cloud:before {
+    content: "\e900";
+}
+
+.valtec-globe .path1:before {
+    content: "\e901";
+    color: rgb(16, 132, 158);
+}
+
+.valtec-globe .path2:before {
+    content: "\e902";
+    margin-left: -1em;
+    color: rgb(16, 132, 158);
+}
+
+.valtec-globe .path3:before {
+    content: "\e903";
+    margin-left: -1em;
+    color: rgb(16, 132, 158);
+}
+
+.valtec-globe .path4:before {
+    content: "\e904";
+    margin-left: -1em;
+    color: rgb(16, 132, 158);
+}
+
+.valtec-globe .path5:before {
+    content: "\e905";
+    margin-left: -1em;
+    color: rgb(16, 132, 158);
+}
+
+.valtec-globe .path6:before {
+    content: "\e906";
+    margin-left: -1em;
+    color: rgb(16, 132, 158);
+}
+
+.valtec-globe .path7:before {
+    content: "\e907";
+    margin-left: -1em;
+    color: rgb(18, 19, 49);
+}
+
+.valtec-server .path1:before {
+    content: "\e908";
+    color: rgb(18, 19, 49);
+}
+
+.valtec-server .path2:before {
+    content: "\e909";
+    margin-left: -1em;
+    color: rgb(18, 19, 49);
+}
+
+.valtec-server .path3:before {
+    content: "\e90a";
+    margin-left: -1em;
+    color: rgb(16, 132, 158);
+}
+
+.valtec-server .path4:before {
+    content: "\e90b";
+    margin-left: -1em;
+    color: rgb(16, 132, 158);
+}
+
+.valtec-server .path5:before {
+    content: "\e90c";
+    margin-left: -1em;
+    color: rgb(16, 132, 158);
+}
+
+.valtec-server .path6:before {
+    content: "\e90d";
+    margin-left: -1em;
+    color: rgb(16, 132, 158);
+}
+
+.valtec-server .path7:before {
+    content: "\e90e";
+    margin-left: -1em;
+    color: rgb(16, 132, 158);
+}
+
+.valtec-server .path8:before {
+    content: "\e90f";
+    margin-left: -1em;
+    color: rgb(16, 132, 158);
+}
+
+.valtec-server .path9:before {
+    content: "\e910";
+    margin-left: -1em;
+    color: rgb(16, 132, 158);
+}
+
+.valtec-server .path10:before {
+    content: "\e911";
+    margin-left: -1em;
+    color: rgb(16, 132, 158);
+}
+
+.valtec-server .path11:before {
+    content: "\e912";
+    margin-left: -1em;
+    color: rgb(16, 132, 158);
+}
+
+.valtec-server .path12:before {
+    content: "\e913";
+    margin-left: -1em;
+    color: rgb(16, 132, 158);
+}
+
+.valtec-server .path13:before {
+    content: "\e914";
+    margin-left: -1em;
+    color: rgb(16, 132, 158);
+}
+
+.valtec-server .path14:before {
+    content: "\e915";
+    margin-left: -1em;
+    color: rgb(16, 132, 158);
+}
+
+.valtec-server .path15:before {
+    content: "\e916";
+    margin-left: -1em;
+    color: rgb(16, 132, 158);
+}
+
+.valtec-server .path16:before {
+    content: "\e917";
+    margin-left: -1em;
+    color: rgb(16, 132, 158);
+}
+
+.valtec-server .path17:before {
+    content: "\e918";
+    margin-left: -1em;
+    color: rgb(16, 132, 158);
+}
+
+.valtec-bar-chart-growth .path1:before {
+    content: "\e919";
+    color: rgb(16, 132, 158);
+}
+
+.valtec-bar-chart-growth .path2:before {
+    content: "\e91a";
+    margin-left: -1em;
+    color: rgb(18, 19, 49);
+}
+
+.valtec-envelope-mail-send:before {
+    content: "\e91b";
+}
+
+.valtec-computer-display .path1:before {
+    content: "\e91c";
+    color: rgb(16, 132, 158);
+}
+
+.valtec-computer-display .path2:before {
+    content: "\e91d";
+    margin-left: -1em;
+    color: rgb(18, 19, 49);
+}
+
+.valtec-fingerprint-security .path1:before {
+    content: "\e91e";
+    color: rgb(18, 19, 49);
+}
+
+.valtec-fingerprint-security .path2:before {
+    content: "\e91f";
+    margin-left: -1em;
+    color: rgb(16, 132, 158);
+}
+
+.valtec-fingerprint-security .path3:before {
+    content: "\e920";
+    margin-left: -1em;
+    color: rgb(16, 132, 158);
+}
+
+.valtec-fingerprint-security .path4:before {
+    content: "\e921";
+    margin-left: -1em;
+    color: rgb(16, 132, 158);
+}
+
+.valtec-fingerprint-security .path5:before {
+    content: "\e922";
+    margin-left: -1em;
+    color: rgb(16, 132, 158);
+}
+
+.valtec-fingerprint-security .path6:before {
+    content: "\e923";
+    margin-left: -1em;
+    color: rgb(16, 132, 158);
+}
+
+.valtec-fingerprint-security .path7:before {
+    content: "\e924";
+    margin-left: -1em;
+    color: rgb(16, 132, 158);
+}
+
+.valtec-fingerprint-security .path8:before {
+    content: "\e925";
+    margin-left: -1em;
+    color: rgb(16, 132, 158);
+}
+
+.valtec-fingerprint-security .path9:before {
+    content: "\e926";
+    margin-left: -1em;
+    color: rgb(16, 132, 158);
+}
+
+.valtec-fingerprint-security .path10:before {
+    content: "\e927";
+    margin-left: -1em;
+    color: rgb(16, 132, 158);
+}
+
+.valtec-it-developer .path1:before {
+    content: "\e928";
+    color: rgb(18, 19, 49);
+}
+
+.valtec-it-developer .path2:before {
+    content: "\e929";
+    margin-left: -1em;
+    color: rgb(18, 19, 49);
+}
+
+.valtec-it-developer .path3:before {
+    content: "\e92a";
+    margin-left: -1em;
+    color: rgb(18, 19, 49);
+}
+
+.valtec-it-developer .path4:before {
+    content: "\e92b";
+    margin-left: -1em;
+    color: rgb(16, 132, 158);
+}
+
+.valtec-it-developer .path5:before {
+    content: "\e92c";
+    margin-left: -1em;
+    color: rgb(18, 19, 49);
+}
+
+.valtec-it-developer .path6:before {
+    content: "\e92d";
+    margin-left: -1em;
+    color: rgb(18, 19, 49);
+}
+
+.valtec-it-developer .path7:before {
+    content: "\e92e";
+    margin-left: -1em;
+    color: rgb(18, 19, 49);
+}
+
+.valtec-it-developer .path8:before {
+    content: "\e92f";
+    margin-left: -1em;
+    color: rgb(16, 132, 158);
+}
+
+.valtec-it-developer .path9:before {
+    content: "\e930";
+    margin-left: -1em;
+    color: rgb(16, 132, 158);
+}
+
+.valtec-it-developer .path10:before {
+    content: "\e931";
+    margin-left: -1em;
+    color: rgb(16, 132, 158);
+}
+
+.valtec-hand-with-phone .path1:before {
+    content: "\e932";
+    color: rgb(18, 19, 49);
+}
+
+.valtec-hand-with-phone .path2:before {
+    content: "\e933";
+    margin-left: -1em;
+    color: rgb(16, 132, 158);
+}
+
+.valtec-hand-with-phone .path3:before {
+    content: "\e934";
+    margin-left: -1em;
+    color: rgb(18, 19, 49);
+}
+
+.valtec-hand-with-phone .path4:before {
+    content: "\e935";
+    margin-left: -1em;
+    color: rgb(18, 19, 49);
+}
+
+.valtec-multimedia-code .path1:before {
+    content: "\e936";
+    color: rgb(18, 19, 49);
+}
+
+.valtec-multimedia-code .path2:before {
+    content: "\e937";
+    margin-left: -1em;
+    color: rgb(18, 19, 49);
+}
+
+.valtec-multimedia-code .path3:before {
+    content: "\e938";
+    margin-left: -1em;
+    color: rgb(16, 132, 158);
+}
+
+.valtec-multimedia-code .path4:before {
+    content: "\e939";
+    margin-left: -1em;
+    color: rgb(16, 132, 158);
+}
+
+.valtec-multimedia-code .path5:before {
+    content: "\e93a";
+    margin-left: -1em;
+    color: rgb(16, 132, 158);
+}
+
+.valtec-video-conference .path1:before {
+    content: "\e93b";
+    color: rgb(18, 19, 49);
+}
+
+.valtec-video-conference .path2:before {
+    content: "\e93c";
+    margin-left: -1em;
+    color: rgb(18, 19, 49);
+}
+
+.valtec-video-conference .path3:before {
+    content: "\e93d";
+    margin-left: -1em;
+    color: rgb(18, 19, 49);
+}
+
+.valtec-video-conference .path4:before {
+    content: "\e93e";
+    margin-left: -1em;
+    color: rgb(16, 132, 158);
+}
+
+.valtec-video-conference .path5:before {
+    content: "\e93f";
+    margin-left: -1em;
+    color: rgb(16, 132, 158);
+}
+
+.valtec-video-conference .path6:before {
+    content: "\e940";
+    margin-left: -1em;
+    color: rgb(18, 19, 49);
+}
+
+.valtec-video-conference .path7:before {
+    content: "\e941";
+    margin-left: -1em;
+    color: rgb(18, 19, 49);
+}
+
+.valtec-video-conference .path8:before {
+    content: "\e942";
+    margin-left: -1em;
+    color: rgb(16, 132, 158);
+}
+
+.valtec-video-conference .path9:before {
+    content: "\e943";
+    margin-left: -1em;
+    color: rgb(16, 132, 158);
+}
+
+.valtec-video-conference .path10:before {
+    content: "\e944";
+    margin-left: -1em;
+    color: rgb(16, 132, 158);
+}
+
+.valtec-video-conference .path11:before {
+    content: "\e945";
+    margin-left: -1em;
+    color: rgb(18, 19, 49);
+}
+
+.valtec-video-conference .path12:before {
+    content: "\e946";
+    margin-left: -1em;
+    color: rgb(16, 132, 158);
+}
+
+.valtec-video-conference .path13:before {
+    content: "\e947";
+    margin-left: -1em;
+    color: rgb(18, 19, 49);
+}
+
+.valtec-consultation .path1:before {
+    content: "\e948";
+    color: rgb(18, 19, 49);
+}
+
+.valtec-consultation .path2:before {
+    content: "\e949";
+    margin-left: -1em;
+    color: rgb(18, 19, 49);
+}
+
+.valtec-consultation .path3:before {
+    content: "\e94a";
+    margin-left: -1em;
+    color: rgb(16, 132, 158);
+}
+
+.valtec-consultation .path4:before {
+    content: "\e94b";
+    margin-left: -1em;
+    color: rgb(18, 19, 49);
+}
+
+.valtec-consultation .path5:before {
+    content: "\e94c";
+    margin-left: -1em;
+    color: rgb(18, 19, 49);
+}
+
+.valtec-consultation .path6:before {
+    content: "\e94d";
+    margin-left: -1em;
+    color: rgb(18, 19, 49);
+}
+
+.valtec-computer-speakers .path1:before {
+    content: "\e94e";
+    color: rgb(16, 132, 158);
+}
+
+.valtec-computer-speakers .path2:before {
+    content: "\e94f";
+    margin-left: -1em;
+    color: rgb(16, 132, 158);
+}
+
+.valtec-computer-speakers .path3:before {
+    content: "\e950";
+    margin-left: -1em;
+    color: rgb(16, 132, 158);
+}
+
+.valtec-computer-speakers .path4:before {
+    content: "\e951";
+    margin-left: -1em;
+    color: rgb(16, 132, 158);
+}
+
+.valtec-computer-speakers .path5:before {
+    content: "\e952";
+    margin-left: -1em;
+    color: rgb(18, 19, 49);
+}
+
+.valtec-computer-speakers .path6:before {
+    content: "\e953";
+    margin-left: -1em;
+    color: rgb(18, 19, 49);
+}
+
+.valtec-computer-speakers .path7:before {
+    content: "\e954";
+    margin-left: -1em;
+    color: rgb(16, 132, 158);
+}
+
+.valtec-computer-speakers .path8:before {
+    content: "\e955";
+    margin-left: -1em;
+    color: rgb(16, 132, 158);
+}
+
+.valtec-computer-speakers .path9:before {
+    content: "\e956";
+    margin-left: -1em;
+    color: rgb(18, 19, 49);
+}
+
+.valtec-computer-speakers .path10:before {
+    content: "\e957";
+    margin-left: -1em;
+    color: rgb(18, 19, 49);
+}
+
+.valtec-iota-internet-of-things .path1:before {
+    content: "\e958";
+    color: rgb(16, 132, 158);
+}
+
+.valtec-iota-internet-of-things .path2:before {
+    content: "\e959";
+    margin-left: -1em;
+    color: rgb(16, 132, 158);
+}
+
+.valtec-iota-internet-of-things .path3:before {
+    content: "\e95a";
+    margin-left: -1em;
+    color: rgb(16, 132, 158);
+}
+
+.valtec-iota-internet-of-things .path4:before {
+    content: "\e95b";
+    margin-left: -1em;
+    color: rgb(18, 19, 49);
+}
+
+.valtec-iota-internet-of-things .path5:before {
+    content: "\e95c";
+    margin-left: -1em;
+    color: rgb(18, 19, 49);
+}
+
+.valtec-iota-internet-of-things .path6:before {
+    content: "\e95d";
+    margin-left: -1em;
+    color: rgb(18, 19, 49);
+}
+
+.valtec-iota-internet-of-things .path7:before {
+    content: "\e95e";
+    margin-left: -1em;
+    color: rgb(18, 19, 49);
+}
+
+.valtec-iota-internet-of-things .path8:before {
+    content: "\e95f";
+    margin-left: -1em;
+    color: rgb(18, 19, 49);
+}
+
+.valtec-iota-internet-of-things .path9:before {
+    content: "\e960";
+    margin-left: -1em;
+    color: rgb(18, 19, 49);
+}
+
+.valtec-iota-internet-of-things .path10:before {
+    content: "\e961";
+    margin-left: -1em;
+    color: rgb(18, 19, 49);
+}
+
+.valtec-iota-internet-of-things .path11:before {
+    content: "\e962";
+    margin-left: -1em;
+    color: rgb(18, 19, 49);
+}
+
+.valtec-iota-internet-of-things .path12:before {
+    content: "\e963";
+    margin-left: -1em;
+    color: rgb(18, 19, 49);
+}
+
+.valtec-iota-internet-of-things .path13:before {
+    content: "\e964";
+    margin-left: -1em;
+    color: rgb(18, 19, 49);
+}
+
+.valtec-iota-internet-of-things .path14:before {
+    content: "\e965";
+    margin-left: -1em;
+    color: rgb(18, 19, 49);
+}
+
+.valtec-iota-internet-of-things .path15:before {
+    content: "\e966";
+    margin-left: -1em;
+    color: rgb(18, 19, 49);
+}
+
+.valtec-iota-internet-of-things .path16:before {
+    content: "\e967";
+    margin-left: -1em;
+    color: rgb(18, 19, 49);
+}
+
+.valtec-iota-internet-of-things .path17:before {
+    content: "\e968";
+    margin-left: -1em;
+    color: rgb(18, 19, 49);
+}
+
+.valtec-iota-internet-of-things .path18:before {
+    content: "\e969";
+    margin-left: -1em;
+    color: rgb(18, 19, 49);
+}
+
+.valtec-iota-internet-of-things .path19:before {
+    content: "\e96a";
+    margin-left: -1em;
+    color: rgb(18, 19, 49);
+}
+
+.valtec-iota-internet-of-things .path20:before {
+    content: "\e96b";
+    margin-left: -1em;
+    color: rgb(18, 19, 49);
+}
+
+.valtec-iota-internet-of-things .path21:before {
+    content: "\e96c";
+    margin-left: -1em;
+    color: rgb(18, 19, 49);
+}
+
+.valtec-iota-internet-of-things .path22:before {
+    content: "\e96d";
+    margin-left: -1em;
+    color: rgb(18, 19, 49);
+}
+
+.valtec-iota-internet-of-things .path23:before {
+    content: "\e96e";
+    margin-left: -1em;
+    color: rgb(18, 19, 49);
+}
+
+.valtec-iota-internet-of-things .path24:before {
+    content: "\e96f";
+    margin-left: -1em;
+    color: rgb(18, 19, 49);
+}
+
+.valtec-iota-internet-of-things .path25:before {
+    content: "\e970";
+    margin-left: -1em;
+    color: rgb(18, 19, 49);
+}
+
+.valtec-iota-internet-of-things .path26:before {
+    content: "\e971";
+    margin-left: -1em;
+    color: rgb(18, 19, 49);
+}
+
+.valtec-iota-internet-of-things .path27:before {
+    content: "\e972";
+    margin-left: -1em;
+    color: rgb(18, 19, 49);
+}
+
+.valtec-iota-internet-of-things .path28:before {
+    content: "\e973";
+    margin-left: -1em;
+    color: rgb(18, 19, 49);
+}
+
+.valtec-iota-internet-of-things .path29:before {
+    content: "\e974";
+    margin-left: -1em;
+    color: rgb(18, 19, 49);
+}
+
+.valtec-iota-internet-of-things .path30:before {
+    content: "\e975";
+    margin-left: -1em;
+    color: rgb(18, 19, 49);
+}
+
+.valtec-iota-internet-of-things .path31:before {
+    content: "\e976";
+    margin-left: -1em;
+    color: rgb(18, 19, 49);
+}
+
+.valtec-iota-internet-of-things .path32:before {
+    content: "\e977";
+    margin-left: -1em;
+    color: rgb(18, 19, 49);
+}
+
+.valtec-iota-internet-of-things .path33:before {
+    content: "\e978";
+    margin-left: -1em;
+    color: rgb(18, 19, 49);
+}
+
+.valtec-iota-internet-of-things .path34:before {
+    content: "\e979";
+    margin-left: -1em;
+    color: rgb(18, 19, 49);
+}
+
+.valtec-iota-internet-of-things .path35:before {
+    content: "\e97a";
+    margin-left: -1em;
+    color: rgb(18, 19, 49);
+}
+
+.valtec-iota-internet-of-things .path36:before {
+    content: "\e97b";
+    margin-left: -1em;
+    color: rgb(18, 19, 49);
+}
+
+.valtec-iota-internet-of-things .path37:before {
+    content: "\e97c";
+    margin-left: -1em;
+    color: rgb(18, 19, 49);
+}
+
+.valtec-iota-internet-of-things .path38:before {
+    content: "\e97d";
+    margin-left: -1em;
+    color: rgb(18, 19, 49);
+}
+
+.valtec-iota-internet-of-things .path39:before {
+    content: "\e97e";
+    margin-left: -1em;
+    color: rgb(18, 19, 49);
+}
+
+.valtec-iota-internet-of-things .path40:before {
+    content: "\e97f";
+    margin-left: -1em;
+    color: rgb(18, 19, 49);
+}
+
+.valtec-iota-internet-of-things .path41:before {
+    content: "\e980";
+    margin-left: -1em;
+    color: rgb(18, 19, 49);
+}
+
+.valtec-iota-internet-of-things .path42:before {
+    content: "\e981";
+    margin-left: -1em;
+    color: rgb(18, 19, 49);
+}
+
+.valtec-iota-internet-of-things .path43:before {
+    content: "\e982";
+    margin-left: -1em;
+    color: rgb(18, 19, 49);
+}
+
+.valtec-iota-internet-of-things .path44:before {
+    content: "\e983";
+    margin-left: -1em;
+    color: rgb(18, 19, 49);
+}
+
+.valtec-iota-internet-of-things .path45:before {
+    content: "\e984";
+    margin-left: -1em;
+    color: rgb(18, 19, 49);
+}
+
+.valtec-iota-internet-of-things .path46:before {
+    content: "\e985";
+    margin-left: -1em;
+    color: rgb(18, 19, 49);
+}
+
+.valtec-iota-internet-of-things .path47:before {
+    content: "\e986";
+    margin-left: -1em;
+    color: rgb(18, 19, 49);
+}
+
+.valtec-iota-internet-of-things .path48:before {
+    content: "\e987";
+    margin-left: -1em;
+    color: rgb(18, 19, 49);
+}
+
+.valtec-iota-internet-of-things .path49:before {
+    content: "\e988";
+    margin-left: -1em;
+    color: rgb(18, 19, 49);
+}
+
+.valtec-iota-internet-of-things .path50:before {
+    content: "\e989";
+    margin-left: -1em;
+    color: rgb(18, 19, 49);
+}
+
+.valtec-iota-internet-of-things .path51:before {
+    content: "\e98a";
+    margin-left: -1em;
+    color: rgb(18, 19, 49);
+}
+
+.valtec-iota-internet-of-things .path52:before {
+    content: "\e98b";
+    margin-left: -1em;
+    color: rgb(18, 19, 49);
+}
+
+.valtec-iota-internet-of-things .path53:before {
+    content: "\e98c";
+    margin-left: -1em;
+    color: rgb(18, 19, 49);
+}
+
+.valtec-iota-internet-of-things .path54:before {
+    content: "\e98d";
+    margin-left: -1em;
+    color: rgb(18, 19, 49);
+}
+
+.valtec-email:before {
+    content: "\e98e";
+}
+
+.valtec-load-balancer .path1:before {
+    content: "\e98f";
+    color: rgb(18, 19, 49);
+}
+
+.valtec-load-balancer .path2:before {
+    content: "\e990";
+    margin-left: -1em;
+    color: rgb(18, 19, 49);
+}
+
+.valtec-load-balancer .path3:before {
+    content: "\e991";
+    margin-left: -1em;
+    color: rgb(18, 19, 49);
+}
+
+.valtec-load-balancer .path4:before {
+    content: "\e992";
+    margin-left: -1em;
+    color: rgb(16, 132, 158);
+}
+
+.valtec-load-balancer .path5:before {
+    content: "\e993";
+    margin-left: -1em;
+    color: rgb(16, 132, 158);
+}
+
+.valtec-load-balancer .path6:before {
+    content: "\e994";
+    margin-left: -1em;
+    color: rgb(16, 132, 158);
+}
+
+.valtec-load-balancer .path7:before {
+    content: "\e995";
+    margin-left: -1em;
+    color: rgb(16, 132, 158);
+}
+
+.valtec-load-balancer .path8:before {
+    content: "\e996";
+    margin-left: -1em;
+    color: rgb(16, 132, 158);
+}
+
+.valtec-load-balancer .path9:before {
+    content: "\e997";
+    margin-left: -1em;
+    color: rgb(16, 132, 158);
+}
+
+.valtec-load-balancer .path10:before {
+    content: "\e998";
+    margin-left: -1em;
+    color: rgb(16, 132, 158);
+}
+
+.valtec-load-balancer .path11:before {
+    content: "\e999";
+    margin-left: -1em;
+    color: rgb(16, 132, 158);
+}
+
+.valtec-load-balancer .path12:before {
+    content: "\e99a";
+    margin-left: -1em;
+    color: rgb(16, 132, 158);
+}
+
+.valtec-load-balancer .path13:before {
+    content: "\e99b";
+    margin-left: -1em;
+    color: rgb(16, 132, 158);
+}
+
+.valtec-load-balancer .path14:before {
+    content: "\e99c";
+    margin-left: -1em;
+    color: rgb(16, 132, 158);
+}
+
+.valtec-load-balancer .path15:before {
+    content: "\e99d";
+    margin-left: -1em;
+    color: rgb(16, 132, 158);
+}
+
+.valtec-load-balancer .path16:before {
+    content: "\e99e";
+    margin-left: -1em;
+    color: rgb(16, 132, 158);
+}
+
+.valtec-load-balancer .path17:before {
+    content: "\e99f";
+    margin-left: -1em;
+    color: rgb(16, 132, 158);
+}
+
+.valtec-load-balancer .path18:before {
+    content: "\e9a0";
+    margin-left: -1em;
+    color: rgb(16, 132, 158);
+}
+
+.valtec-command-window-line .path1:before {
+    content: "\e9a1";
+    color: rgb(18, 19, 49);
+}
+
+.valtec-command-window-line .path2:before {
+    content: "\e9a2";
+    margin-left: -1em;
+    color: rgb(16, 132, 158);
+}
+
+.valtec-command-window-line .path3:before {
+    content: "\e9a3";
+    margin-left: -1em;
+    color: rgb(16, 132, 158);
+}
+
+.valtec-command-window-line .path4:before {
+    content: "\e9a4";
+    margin-left: -1em;
+    color: rgb(16, 132, 158);
+}
+
+.valtec-command-window-line .path5:before {
+    content: "\e9a5";
+    margin-left: -1em;
+    color: rgb(16, 132, 158);
+}
+
+.valtec-command-window-line .path6:before {
+    content: "\e9a6";
+    margin-left: -1em;
+    color: rgb(16, 132, 158);
+}
+
+.valtec-qr-code .path1:before {
+    content: "\e9a7";
+    color: rgb(16, 132, 158);
+}
+
+.valtec-qr-code .path2:before {
+    content: "\e9a8";
+    margin-left: -1em;
+    color: rgb(16, 132, 158);
+}
+
+.valtec-qr-code .path3:before {
+    content: "\e9a9";
+    margin-left: -1em;
+    color: rgb(16, 132, 158);
+}
+
+.valtec-qr-code .path4:before {
+    content: "\e9aa";
+    margin-left: -1em;
+    color: rgb(16, 132, 158);
+}
+
+.valtec-qr-code .path5:before {
+    content: "\e9ab";
+    margin-left: -1em;
+    color: rgb(16, 132, 158);
+}
+
+.valtec-qr-code .path6:before {
+    content: "\e9ac";
+    margin-left: -1em;
+    color: rgb(16, 132, 158);
+}
+
+.valtec-qr-code .path7:before {
+    content: "\e9ad";
+    margin-left: -1em;
+    color: rgb(16, 132, 158);
+}
+
+.valtec-qr-code .path8:before {
+    content: "\e9ae";
+    margin-left: -1em;
+    color: rgb(18, 19, 49);
+}
+
+.valtec-qr-code .path9:before {
+    content: "\e9af";
+    margin-left: -1em;
+    color: rgb(18, 19, 49);
+}
+
+.valtec-qr-code .path10:before {
+    content: "\e9b0";
+    margin-left: -1em;
+    color: rgb(18, 19, 49);
+}
+
+.valtec-qr-code .path11:before {
+    content: "\e9b1";
+    margin-left: -1em;
+    color: rgb(18, 19, 49);
+}
+
+.valtec-qr-code .path12:before {
+    content: "\e9b2";
+    margin-left: -1em;
+    color: rgb(18, 19, 49);
+}

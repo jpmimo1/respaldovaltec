@@ -1,0 +1,66 @@
+@import "../general/typography";
+@import "../general/sizesSreem";
+@import "../general/margins";
+@import "../general/buttons";
+.banner {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 730px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    &-video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        z-index: -1;
+        transform: translate(-50%, -50%);
+    }
+    &__body {
+        margin: 0 auto;
+        color: white;
+        max-width: calc(#{$m} - #{$marginBasic * 10});
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        &--title {
+            @include h1--image;
+            margin-bottom: 0.5em;
+        }
+    }
+    &--down-button {
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translate(-50%, 60%);
+        background-color: white;
+        width: 111px;
+        height: 91px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 3em;
+        padding-bottom: 0.7em;
+        cursor: pointer;
+        &:hover {
+            i {
+                animation: heartBeat;
+                animation-duration: 1s;
+            }
+        }
+        @include s-responsive {
+            display: none;
+        }
+    }
+    .button-arrow {
+        @include button-arrow(normal, $white, $secondary, darken($secondary, 15%));
+    }
+    @include s-responsive {
+        height: 350px;
+    }
+}

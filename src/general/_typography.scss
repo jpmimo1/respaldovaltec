@@ -1,0 +1,176 @@
+@import "sizesSreem";
+$typography: "Montserrat", sans-serif;
+@mixin h1--image {
+  font-family: $typography;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 59px;
+  letter-spacing: 0.2em;
+  @include s-responsive {
+    font-size: 31.25px;
+    line-height: 146.4%;
+    letter-spacing: 0.03em;
+  }
+}
+
+@mixin h1--normal {
+  font-family: $typography;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 59px;
+  letter-spacing: 0.05em;
+  @include s-responsive {
+    font-size: 31.25px;
+    line-height: 146.4%;
+    letter-spacing: 0.03em;
+  }
+}
+
+@mixin h2 {
+  font-family: $typography;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36.62px;
+  line-height: 45px;
+  letter-spacing: 0.05em;
+  @include s-responsive {
+    font-size: 25px;
+    line-height: 146.4%;
+    letter-spacing: 0.03em;
+  }
+}
+
+@mixin h3 {
+  font-family: $typography;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 29.3px;
+  line-height: 36px;
+  letter-spacing: 0.05em;
+  @include s-responsive {
+    font-size: 20px;
+    line-height: 146.4%;
+    letter-spacing: 0.03em;
+  }
+}
+
+@mixin h4 {
+  font-family: $typography;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 23.44px;
+  line-height: 146.4%;
+  letter-spacing: 0.03em;
+  @include s-responsive {
+    font-size: 16px;
+    line-height: 146.4%;
+    letter-spacing: 0.03em;
+  }
+}
+
+@mixin h4--medium {
+  font-family: $typography;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 23.44px;
+  line-height: 146.4%;
+  letter-spacing: 0.03em;
+  @include s-responsive {
+    font-size: 16px;
+    line-height: 146.4%;
+    letter-spacing: 0.03em;
+  }
+}
+
+@mixin h5--strong {
+  font-family: $typography;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18.75px;
+  line-height: 146.4%;
+  letter-spacing: 0.03em;
+  @include s-responsive {
+    font-size: 12.8px;
+    line-height: 146.4%;
+    letter-spacing: 0.03em;
+  }
+}
+
+@mixin h5 {
+  font-family: $typography;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18.75px;
+  line-height: 146.4%;
+  letter-spacing: 0.03em;
+  @include s-responsive {
+    font-size: 12.8px;
+    line-height: 146.4%;
+    letter-spacing: 0.03em;
+  }
+}
+
+@mixin h4--button {
+  font-family: $typography;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.2em;
+  @include s-responsive {
+    font-size: 17.3722px;
+    line-height: 21px;
+  }
+}
+
+@mixin h5--button {
+  font-family: $typography;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 20.6805px;
+  line-height: 25px;
+  letter-spacing: 0.2em;
+  @include s-responsive {
+    font-size: 13.7255px;
+    line-height: 17px;
+  }
+}
+
+@mixin h2style($color) {
+  font-family: $typography;
+  font-style: normal;
+  font-weight: bold;
+  color: $color;
+  font-size: 36.62px;
+  line-height: 45px;
+  letter-spacing: 0.05em;
+}
+
+@mixin p($color) {
+  font-family: Montserrat;
+  color: $color;
+  font-style: normal;
+  font-size: 18.75px;
+  line-height: 22.86px;
+  letter-spacing: 0.03em;
+}
+
+@mixin h3Style($font-weight) {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: $font-weight;
+  font-size: 29.3px;
+  line-height: 36px;
+  letter-spacing: 0.05em;
+  margin-bottom: 20px;
+}
+
+@mixin h4Style($font-weight) {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: $font-weight;
+  font-size: 23.44px;
+  line-height: 146.4%;
+}

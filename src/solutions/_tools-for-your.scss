@@ -1,0 +1,23 @@
+@import "../cards";
+.tools-for-you {
+    &__cards {
+        margin-top: 5em;
+        @include s-responsive {
+            margin-top: 3em;
+        }
+    }
+    .cards-inter {
+        @include cards-inter;
+        .card-inter__image {
+            .tool-business-1 {
+                background-image: url("/assets/fotos/tools-business-1.jpg");
+            }
+            .tool-business-2 {
+                background-image: url("/assets/fotos/tools-business-2.jpg");
+            }
+            .tool-business-3 {
+                background-image: url("/assets/fotos/tools-business-3.jpg");
+            }
+        }
+    }
+}

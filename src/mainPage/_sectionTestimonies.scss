@@ -1,0 +1,173 @@
+@import "../general/colors";
+@import "../general/typography";
+@import "../general/sizesSreem";
+@mixin hexagon($width) {
+    width: #{$width}px;
+    height: #{$width * 0.87}px;
+    overflow: hidden;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
+
+@mixin avatar($avatar-width-large, $avatar-width-small) {
+    &__area {
+        max-width: $l;
+        margin: 0 auto;
+        margin-top: $marginBasic;
+        position: relative;
+        padding: 0 $marginBasic;
+        @include s-responsive {
+            padding: 0 $marginSmall;
+            margin-top: $marginSmall;
+        }
+    }
+    &__avatars {
+        display: flex;
+        flex-wrap: wrap;
+        @include s-responsive {
+            justify-content: space-between;
+        }
+    }
+    &__avatar {
+        &--1-5 {
+            margin-right: calc((100% - (#{$avatar-width-large}px * 5)) / 6);
+            margin-bottom: 1.5em;
+            &:nth-child(1) {
+                margin-left: calc((100% - (#{$avatar-width-large}px * 5)) / 6);
+            }
+        }
+        &--2-4 {
+            margin-bottom: 3em;
+            &:nth-child(7) {
+                margin-right: calc((2 * 100% - (7 * #{$avatar-width-large}px)) / 3);
+            }
+            &:nth-child(2n) {
+                margin-right: calc((100% - (#{$avatar-width-large}px * 5)) / 6);
+            }
+        }
+        &--3-2 {
+            margin-bottom: 4.5em;
+            &:nth-child(2n) {
+                margin-left: calc((100% - (#{$avatar-width-large}px * 5)) / 6);
+                margin-right: calc((2 * 100% - #{$avatar-width-large}px) / 3);
+            }
+            &:nth-child(2n + 1) {
+                margin-right: calc((100% - (#{$avatar-width-large}px * 5)) / 6);
+            }
+        }
+        &--4-2 {
+            &:nth-child(2n) {
+                margin-right: calc(100% - (2 * #{$avatar-width-large}px));
+            }
+        }
+        &-image {
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            @include hexagon($avatar-width-large);
+        }
+        @include s-responsive {
+            &--1-5 {
+                margin: 0 auto 1em auto !important;
+            }
+            &-image {
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                @include hexagon($avatar-width-small);
+            }
+            &--2-4,
+            &--3-2,
+            &--4-2 {
+                display: none;
+            }
+        }
+    }
+    &__body {
+        width: calc(100% / 2);
+        position: absolute;
+        top: calc(#{$avatar-width-large * 2}px + 2em);
+        transform: translateX(-50%);
+        left: 50%;
+        @include s-responsive {
+            position: relative;
+            top: 0;
+            width: 100%;
+        }
+    }
+    &__text {
+        @include h4--medium;
+        max-height: #{$avatar-width-large * 2.05}px;
+        overflow-x: auto;
+        @include s-responsive {
+            max-height: none;
+        }
+    }
+    &__quotes {
+        @include h1--image;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 1em;
+        height: 1em;
+    }
+    &__author {
+        @include h4--medium;
+        margin-top: 0.5em;
+    }
+}
+
+.testimonies {
+    @include avatar(145, 78);
+}
+
+.avatar-1 {
+    background-image: url("../assets/fotosAvatars/avatar1.png");
+}
+
+.avatar-2 {
+    background-image: url("../assets/fotosAvatars/avatar2.png");
+}
+
+.avatar-3 {
+    background-image: url("../assets/fotosAvatars/avatar3.png");
+}
+
+.avatar-4 {
+    background-image: url("../assets/fotosAvatars/avatar4.png");
+}
+
+.avatar-5 {
+    background-image: url("../assets/fotosAvatars/avatar5.png");
+}
+
+.avatar-6 {
+    background-image: url("../assets/fotosAvatars/avatar6.png");
+}
+
+.avatar-7 {
+    background-image: url("../assets/fotosAvatars/avatar7.png");
+}
+
+.avatar-8 {
+    background-image: url("../assets/fotosAvatars/avatar8.png");
+}
+
+.avatar-9 {
+    background-image: url("../assets/fotosAvatars/avatar9.png");
+}
+
+.avatar-10 {
+    background-image: url("../assets/fotosAvatars/avatar10.png");
+}
+
+.avatar-11 {
+    background-image: url("../assets/fotosAvatars/avatar11.png");
+}
+
+.avatar-12 {
+    background-image: url("../assets/fotosAvatars/avatar12.png");
+}
+
+.avatar-13 {
+    background-image: url("../assets/fotosAvatars/avatar13.png");
+}

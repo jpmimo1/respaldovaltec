@@ -1,0 +1,134 @@
+@import "../general/colors";
+@import "../general/margins";
+@import "../general/typography";
+@import "../general/buttons";
+@import "../iconsValtec";
+.not-found {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__warning-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2em;
+        .error-outline {
+            background-image: url(map-get($valtec-icons-urls, "error-outline-gif"));
+            background-position: center;
+            height: 120px;
+            width: 120px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            @include m-responsive {
+                height: 120px;
+                width: 120px;
+            }
+            @include s-responsive {
+                height: 100px;
+                width: 100px;
+            }
+            @include xs-responsive {
+                height: 60px;
+                width: 60px;
+                background-size: 120% 120%;
+            }
+        }
+        top: 5em;
+        @include m-responsive {
+            margin-bottom: 1em;
+        }
+        @include s-responsive {
+            margin-bottom: 0;
+        }
+    }
+    &__circle {
+        margin: $marginBasic;
+        background-color: $primary-blur;
+        border-radius: 50%;
+        max-width: 873px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        &::before {
+            content: "";
+            padding-bottom: 100%;
+        }
+        @include m-responsive {
+            margin: 1em;
+        }
+        @include s-responsive {
+            max-width: 520px;
+        }
+    }
+    &__content {
+        position: absolute;
+        text-align: center;
+        color: $primary-two;
+        margin-bottom: 7em;
+        @include xs-responsive {
+            margin-bottom: 3em;
+        }
+    }
+    &__big-text {
+        @include h1--image;
+        @include xs-responsive {
+            line-height: 1.2em;
+        }
+    }
+    &__404-number {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 216px;
+        line-height: 1.2em;
+        letter-spacing: 0.2em;
+        color: $primary-two;
+        /* Will override color (regardless of order) */
+        -webkit-text-stroke-width: 8px;
+        -webkit-text-stroke-color: $primary-two;
+        position: relative;
+        &-clone {
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
+            position: absolute;
+            color: $primary-blur;
+            -webkit-text-stroke-width: initial;
+        }
+        @include m-responsive {
+            font-size: 180px;
+        }
+        @include s-responsive {
+            font-size: 100px;
+            line-height: 1em;
+            -webkit-text-stroke-width: 6px;
+        }
+        @include xs-responsive {
+            font-size: 70px;
+            line-height: 1em;
+            -webkit-text-stroke-width: 5px;
+        }
+    }
+    &__small-text {
+        @include h4--medium;
+    }
+    &__button-return {
+        display: flex;
+        justify-content: center;
+        margin-top: 2em;
+        a {
+            @include button-line($primary-two,
+            $primary-two,
+            $white);
+            display: block;
+            width: auto;
+        }
+        @include s-responsive {
+            margin-top: 0.5em;
+        }
+    }
+}

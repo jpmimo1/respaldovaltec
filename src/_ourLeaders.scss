@@ -1,0 +1,57 @@
+@import "general/colors";
+@import "general/typography";
+
+.body-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: $primary-blur;
+}
+.leader-img {
+  width: 100%;
+  padding: 1rem 2rem;
+  margin-bottom: 2rem;
+}
+
+.leader-name {
+  text-align: center;
+  @include h4;
+}
+.leader-puesto {
+  text-align: center;
+  @include h4;
+}
+.leader-description {
+  @include h4--medium;
+}
+.container-circles {
+  display: flex;
+  justify-content: space-around;
+  gap: 5rem;
+}
+.circle {
+  display: flex;
+  justify-content: center;
+  padding: 0 2rem;
+  border-radius: 50%;
+  width: 400px;
+  height: 400px;
+  background-color: $primary-blur;
+}
+.circle-in {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 0 3rem;
+  &__title {
+    font-size: 72px;
+    letter-spacing: 0.2em;
+    line-height: 87.77px;
+    color: $primary-two;
+    font-weight: bold;
+  }
+  &__description {
+    @include h3;
+    color: $primary-two;
+  }
+}

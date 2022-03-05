@@ -1,0 +1,112 @@
+@import "../general/colors";
+@import "../general/typography";
+@import "../general/margins";
+@import "../general/sizesSreem";
+@import "../iconsValtec";
+@import "../general/transitions";
+@debug $valtec-icons-urls;
+$icons-valtec: "command-window-line",
+"server",
+"load-balancer",
+"fingerprint-security",
+"bar-chart-growth",
+"video-conference",
+"multimedia-code",
+"computer-display";
+.our-services {
+    $father: &;
+    .container {
+        max-width: calc(#{$m} - #{$marginBasic * 4});
+    }
+    &__cards {
+        margin: 3em 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        grid-column-gap: $marginBasic;
+        grid-row-gap: $marginBasic / 2;
+        @include s-responsive {
+            grid-column-gap: $marginSmall;
+        }
+    }
+    &__card {
+        display: flex;
+        flex-direction: column;
+        background-color: $primary-blur;
+        border-radius: 41.3611px;
+        padding: 2.5em 1.5em;
+        width: calc((100% - #{$marginBasic * 2}) / 3);
+        &:nth-child(n + 4) {
+            display: none;
+        }
+        &__icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        @each $icon in $icons-valtec {
+            .icons-valtec--#{$icon} {
+                background-image: url(map-get($valtec-icons-urls, "#{$icon}-svg"));
+            }
+            &:hover {
+                .icons-valtec--#{$icon} {
+                    background-size: 116% 116%;
+                    background-image: url(map-get($valtec-icons-urls, "#{$icon}-gif"));
+                }
+            }
+        }
+        &__title {
+            @include h4;
+            text-align: center;
+            margin: 1em 0;
+        }
+        &__subtitle {
+            @include h5;
+            margin-bottom: 1em;
+        }
+        a {
+            margin-top: auto;
+        }
+        .button-arrow {
+            @include button-arrow(small,
+            $primary-two,
+            darken($primary-two,
+            5%),
+            darken($primary-two,
+            10%));
+        }
+        @include s-responsive {
+            flex-basis: calc((100% - #{$marginSmall}) / 2);
+        }
+        @include xs-responsive {
+            flex-basis: 100%;
+        }
+    }
+    &__button-see-more {
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+        user-select: none;
+        &:hover {
+            .button-see-more {
+                transition: $basic-transition;
+                i {
+                    animation: heartBeat;
+                    animation-duration: 1s;
+                }
+            }
+        }
+    }
+    &.open {
+        #{$father}__card {
+            &:nth-child(n+4) {
+                display: flex;
+            }
+        }
+        .button-see-more {
+            &__icon {
+                transform: rotate(180deg);
+            }
+        }
+    }
+}

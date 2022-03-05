@@ -1,0 +1,43 @@
+.other-services {
+    .container {
+        max-width: 100%;
+    }
+    .header-section {
+        margin-bottom: 4em;
+    }
+}
+
+.services {
+    max-width: 1575px;
+    min-height: 249px;
+    background-color: $primary-blur;
+    border-radius: 40px;
+    display: flex;
+    margin: auto;
+    margin-bottom: 170px;
+    justify-content: center;
+    align-content: center;
+    padding: 50px;
+    gap: 50px;
+    flex-wrap: wrap;
+    &__item {
+        flex-basis: 300px;
+        @include h5;
+        &-icon {
+            width: 54px;
+        }
+    }
+}
+
+@media screen and (max-width: 1626px) {
+    .services {
+        margin: 0 12px;
+        margin-bottom: 170px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .services {
+        padding: 40px 20px;
+    }
+}

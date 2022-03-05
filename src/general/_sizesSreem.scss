@@ -1,0 +1,35 @@
+$xs: 450px;
+$s: 850px;
+$m: 1550px;
+$l: 1750px;
+$xl: 1920px;
+
+@mixin xs-responsive {
+  @media screen and (max-width: $xs) {
+    @content;
+  }
+}
+
+@mixin s-responsive {
+  @media screen and (max-width: $s) {
+    @content;
+  }
+}
+
+@mixin m-responsive {
+  @media screen and (max-width: $m) {
+    @content;
+  }
+}
+
+@mixin l-responsive {
+  @media screen and (max-width: $l) {
+    @content;
+  }
+}
+
+@mixin xl-responsive {
+  @media screen and (max-width: $xl) {
+    @content;
+  }
+}
